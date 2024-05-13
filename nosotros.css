@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/*===========    NAVEGACION INICIO   ============*/
+header{
+    width: 100%;
+    display: flex;
+    background: #112d4e;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 5rem;
+    position: fixed;
+    z-index: 2;
+}
+nav ul {
+    list-style: none;
+    background: #112d4e;
+    text-align: right;}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;}
+
+nav ul li a:hover{
+    color: #009eda;
+}
+
+/*MENU-ICON*/
+.logo-icono{
+    font-size: 1.7rem;
+    color: white;
+    display: none;
+}
+.navegacion.active{
+    color: #112d4e;
+}
+.heiader.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+
+/*=========     SECCION PRINCIPAL   ============*/
+.section-nosotros{
+    width:100%;
+    min-height: 80vh;
+    background: url('imagenes/banner-nosotros.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+}
+.section-nosotros h2{
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    padding-top:2rem ;
+    color: white;
+}
+
+/*=========     INFORMACION NOSOTROS   ============*/
+.info-nosotros{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem ;
+}
+.container-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem 1rem;
+}
+.info-nosotros .video{
+    width: 100%;
+    height: 100%;
+}
+.info-nosotros .info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #525252;
+}
+
+/*=========     BANNER DOS TALLER   ============*/
+.banner-nosotros-taller{
+    width:100%;
+    min-height: 60vh;
+    background: url('imagenes/nosotros-banner-taller.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+}
+.banner-nosotros-taller h2{
+    color: white;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+
+}
+
+
+
+/*============      FOOTER      =============*/
+
+.footer{
+    background: #112d4e;
+    padding: 4rem .5rem;
+    text-align: center;
+}
+.footer .container-footer{
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    padding: 0px .5rem;
+}
+.footer .container-info-map{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0px;
+}
+
+.container-footer .footer-map{
+    width: 100%;
+    height: 400px;
+    flex: 50%;
+}
+.container-footer iframe{
+    width: 100%;
+    height: 100%;
+}
+.footer h2{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+}
+.footer-info{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+.footer-info a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-bottom: 1.7rem;
+    
+}   
+/**/  
+
+.footer-copy{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-decoration: none;
+}
+.footer-copy a,
+.footer-copy p {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+.footer-copy{
+    background:#081727;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/*===========   NAVEGACION RESPONSIVE    ===========*/
+
+@media (max-width: 1071px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .info-nosotros{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+}
+
+
+
+@media (max-width: 894px){
+    .navbar .navegacion{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 5rem;
+        background: #112d4e;
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        z-index:1 ;
+        font-size: 1.3rem;
+        display: none;
+    }
+    .navegacion.active{
+        display: block;
+    }
+    .navegacion li{
+        display: block;
+    }
+    .logo-icono{
+        display: block;
+        position: absolute;
+        right: 4rem;
+    }
+}
+
+@media (max-width: 847px){
+    .container-footer .footer-map{
+        width: 100%;
+        height: 400px;
+        flex: 50%;
+    }
+}
+
+
+@media (max-width: 805px){
+    .container-info{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 3rem;
+        padding: 2rem 1rem;
+    }
+    .info-nosotros .info p{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:807px){
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .footer h2{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+}
+
+
+@media (max-width: 640px){
+    header{
+        width: 100%;
+        padding: .7rem 2rem;
+        position: fixed;
+    }
+}
+
+
+@media (max-width: 452px){
+    header .logo img{
+        width: 250px;
+    }
+    .container-info{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: .5rem;
+        padding: 1.5rem 1rem;
+    }
+    .footer{
+        
+        padding: 4rem .2rem;
+    }
+    .footer h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 440px){
+    .container-info{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 0rem;
+        padding: 2rem 1rem;
+    }
+}

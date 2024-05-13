@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+/*===========    NAVEGACION INICIO   ============*/
+header{
+    width: 100%;
+    display: flex;
+    background: #112d4e;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 5rem;
+    position: fixed;
+}
+nav ul {
+    list-style: none;
+    background: #112d4e;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;}
+
+nav ul li a:hover{
+    color: #009eda;
+}
+
+/*MENU-ICON*/
+.logo-icono{
+    font-size: 1.7rem;
+    color: white;
+    display: none;
+}
+.navegacion.active{
+    color: #112d4e;
+}
+.heiader.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+/*=============     BANNER-PRINCIPAL        ==============*/
+.section{
+    width: 100%;
+    height: 80vh;
+    background: url('imagenes/banner-principal.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo{
+    text-align: center;
+    padding-top: 6rem;
+    width: 70%;
+}
+
+.parrafo h1{
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.parrafo p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+/*=========     BANNER SERVICIOS        ===========*/
+.section-servicios{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+figure img{
+    width: 100%;
+    height: 270px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0px .5rem;
+}
+.info h2{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #112d4e;
+}
+.info p{
+    color: #525252;
+}
+
+/*      BANNER      */
+.banner2{
+    width: 100%;
+    height: 60vh;
+    background: url('imagenes/banner-secundario2.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/*==============        INFORMACION EMPRESA     ================*/
+.section-empresa{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.section-empresa h2{
+    font-size: 1.1rem;
+    color: #525252;
+    text-align: center;
+    padding: 0px 1rem;
+    font-weight: 100;
+}
+
+/*================= MARCAS QUE CONFIAN  =================*/
+.section-marcas{
+    width: 100%;
+    height: 60vh;
+    background: url('imagenes/marcas-que-confian.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+
+}
+.section-marcas h2{
+    text-align: center;
+    color: #dd027c;
+    font-size: 2rem;
+}
+
+
+/*      IMAGENES DE MARCAS      */
+.contain-marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+.contain-marcas .container-img{
+    display: grid;
+    grid-template-columns: repeat(5, 3fr);
+    gap: 4rem;                  /* 5 columnas y 3 filas*/
+}
+.contain-marcas figure img{
+    width: 9rem;
+    height: 6rem;
+}
+.contain-marcas a{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    text-decoration: none;
+    color: #525252;
+}
+
+
+/*============      FOOTER      =============*/
+
+.footer{
+    background: #112d4e;
+    padding: 4rem .5rem;
+    text-align: center;
+}
+.footer .container-footer{
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    padding: 0px .5rem;
+}
+.footer .container-info-map{
+    width: 80%;
+    height: auto;
+    margin: auto;
+
+    padding: 1rem 0px;
+}
+
+.container-footer .footer-map{
+    width: 100%;
+    height: 400px;
+    flex: 50%;
+}
+.container-footer iframe{
+    width: 100%;
+    height: 100%;
+}
+.footer h2{
+    font-size: 2rem;
+    color: #ffffff;
+    padding-bottom: 1.5rem;
+}
+.footer-info{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+.footer-info a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-bottom: 1.7rem;
+    
+}   
+/**/
+
+.footer-copy{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-decoration: none;
+}
+.footer-copy a,
+.footer-copy p {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+.footer-copy{
+    background:#081727;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*============  RESPONSIVE  ==============*/
+@media (max-width: 1075px){
+    .section-servicios{
+        width: 100%;
+    }
+    .contain-marcas .container-img{
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        gap: 4rem;
+    }
+}
+@media (max-width: 929px){
+    .section .parrafo h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .section .parrafo p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+}
+
+/*========NAVEGACION RESPONSIVE=========*/
+@media (max-width: 894px){
+    .navbar .navegacion{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 5rem;
+        background: #112d4e;
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        z-index:1 ;
+        font-size: 1.3rem;
+        display: none;
+    }
+    .navegacion.active{
+        display: block;
+    }
+    .navegacion li{
+        display: block;
+    }
+    .logo-icono{
+        display: block;
+        position: absolute;
+        right: 4rem;
+    }
+}
+
+@media (max-width: 847px){
+    .container{
+        width: 100%;
+    }
+    .section-servicios{
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px .5rem;
+    }
+    figure img{
+        width: 100%;
+        height: 300px;
+    }
+    .container-footer .footer-map{
+        width: 100%;
+        height: 400px;
+        flex: 50%;
+    }
+    .container-footer .footer-map{
+        width: 100%;
+        height: 400px;
+        flex: 50%;
+    }
+}
+
+
+@media (max-width:739px){
+    .contain-marcas .container-img{
+        display: grid;
+        grid-template-columns: repeat(3, 6fr);
+        gap: 4rem;             /* 5 columnas y 3 filas*/
+    }
+
+}
+@media (max-width:807px){
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .footer h2{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 621px){
+    .contain-marcas .container-img{
+        display: grid;
+        grid-template-columns: repeat(3, 6fr);
+        gap: 3rem;             /* 5 columnas y 3 filas*/
+    }
+    .contain-marcas figure img{
+        width: 6rem;
+        height: 5rem;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem ;
+    }
+    
+    
+}
+
+
+@media (max-width: 640px){
+    header{
+        width: 100%;
+        padding: .7rem 2rem;
+        position: fixed;
+    }
+}
+
+
+@media (max-width: 460px){
+    .container{
+        width: 100%;
+    }
+    .section-servicios{
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+
+@media (max-width: 452px){
+    header .logo img{
+        width: 250px;
+    }
+    .section-servicios{
+        text-align: center;
+       
+    }
+    .footer{
+        
+        padding: 4rem .2rem;
+    }
+}
+
