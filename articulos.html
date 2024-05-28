@@ -40,10 +40,38 @@
         <h2>conoce nuestra tienda</h2>
     </section>
 
+
+
+    <!-- ==========    SECCION CARRITO   ============-->
+    <section class="container-card">
+        <article id="carrito"> 
+            <i class="ri-shopping-cart-2-line"></i>
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <!---->
+                    <div class="lista_de_articulos">
+
+                    </div>
+                    <!---->
+                    <button id="vaciar_carrito">VACIAR CARRITO</button>
+                </div>
+            </i>
+        </article>
+
+
+    </section>
+
+
     <!-- ==========    TIENDA   ============-->
     <section class="banner-tienda ">
         <h2>accesorios</h2>
-        <article class="container-tienda container">
+        <article id="vaciar-carrito" class="container-tienda container">
             <!---->
             <div class="accesorios">
                 <figure>
@@ -54,7 +82,7 @@
                     <h2>Q 40.00</h2>
                 </div>
                 <div class="info-hover">
-                    <a href="#">agregar a favorito<i class="ri-heart-line" ></i></a>
+                    <a data-id="1" class="agregar-carrito" href="#">agregar a favorito<i class="ri-heart-line" ></i></a>
                     <a href="#">agregar a carrito<i class="ri-shopping-cart-2-fill"></i></a>
                 </div>
             </div>
@@ -331,7 +359,7 @@
                 </figure>
                 <div class="descripcion">
                     <p>Grabado de retrato <br> en vidrio </p>
-                    <h2>Q 650.00</h2>
+                    <h2>Q 250</h2>
                 </div>
                 <div class="info-hover">
                     <a href="#">agregar a favorito<i class="ri-heart-line" ></i></a>
@@ -359,7 +387,7 @@
                 </figure>
                 <div class="descripcion">
                     <p>Lamparas de vidrio <br> diferentes diseños </p>
-                    <h2>Q 200.00</h2>
+                    <h2>Q 100.00</h2>
                 </div>
                 <div class="info-hover">
                     <a href="#">agregar a favorito<i class="ri-heart-line" ></i></a>
@@ -448,6 +476,7 @@
     <!--==========SCRIPT==========-->
     <script src="icon.js"></script>
     <script src="fav"></script>
+    <script src="carritodecompra.js"></script>
 
 </body>
 </html>

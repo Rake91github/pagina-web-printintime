@@ -56,7 +56,8 @@ nav ul li a:hover{
 .navegacion.active{
     color: #112d4e;
 }
-.heiader.sticky{
+/**/
+.navbar.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
@@ -77,6 +78,37 @@ nav ul li a:hover{
     text-transform: capitalize;
     text-align: center;
 }
+
+/*===========   AGREGAR AL CARRITO   ============*/
+.container-card article{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 5rem;
+    background-color: #fff;
+    margin-bottom: 5px;
+    color: #333;
+    z-index: 1;
+}
+.nav-card{
+    display: none;
+}
+.container-card article button{
+    display: none;
+}
+.nav-card li{
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.container-card article i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/*icono carretia*/
+
 
 
 /*===========    TIENDA   ============*/
@@ -247,31 +279,53 @@ nav ul li a:hover{
     align-items: center;
 }
 
+
+/*========  NAV =========*/
+@media (max-width: 891px){
+    header{
+        padding: .7rem 2rem;
+    }
+}
+@media (max-width: 799px){
+    header{
+        padding: .7rem 1rem;
+    }
+}
+
+
 /*========NAVEGACION RESPONSIVE=========*/
-@media (max-width: 894px){
-    .navbar .navegacion{
+@media (max-width: 765px){
+    .navbar{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 100%;
+        width: 80%;
         padding: 5rem;
+        transition: all 500ms ease;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: transform 500ms , visibility 0 ms 500ms;
         background: #112d4e;
         border-top: .1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
         z-index:1 ;
         font-size: 1.3rem;
-        display: none;
     }
-    .navegacion.active{
-        display: block;
+    .active{
+        visibility: visible;
+        transform: translateX(0%);
+        transition: transform 500ms;
     }
-    .navegacion li{
+    .navbar li{
         display: block;
     }
     .logo-icono{
         display: block;
         position: absolute;
         right: 4rem;
+    }
+    .container-card article{
+        padding: 1rem 3rem;
     }
 }
 

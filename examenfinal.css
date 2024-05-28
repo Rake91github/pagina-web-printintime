@@ -56,7 +56,8 @@ nav ul li a:hover{
 .navegacion.active{
     color: #112d4e;
 }
-.heiader.sticky{
+/**/
+.navbar.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
@@ -296,33 +297,58 @@ figure img{
     
 }
 
+@media (max-width: 891px){
+    header{
+        padding: .7rem 2rem;
+    }
+}
+@media (max-width: 799px){
+    header{
+        padding: .7rem 1rem;
+    }
+}
+
+
+
+
+
+
 /*========NAVEGACION RESPONSIVE=========*/
-@media (max-width: 894px){
-    .navbar .navegacion{
+@media (max-width: 765px){
+    .navbar{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 100%;
+        width: 80%;
+        height: 300vh;
         padding: 5rem;
+        transition: all 500ms ease;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: transform 500ms , visibility 0 ms 500ms;
         background: #112d4e;
         border-top: .1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
         z-index:1 ;
         font-size: 1.3rem;
-        display: none;
     }
-    .navegacion.active{
+    .active{
+        visibility: visible;
+        transform: translateX(0%);
+        transition: transform 500ms;
+    }
+    
+    .navbar li{
         display: block;
     }
-    .navegacion li{
-        display: block;
-    }
+
     .logo-icono{
         display: block;
         position: absolute;
         right: 4rem;
     }
 }
+
 
 @media (max-width: 847px){
     .container{
@@ -344,7 +370,7 @@ figure img{
     .info{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         padding: 0px .5rem;
     }
